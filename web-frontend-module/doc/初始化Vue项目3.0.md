@@ -16,30 +16,22 @@
     https://segmentfault.com/a/1190000002589144
 ------------------------------------------
 
-#4.安装vue-cli
-    npm install -g vue-cli 
+#4.vue-cli-3.0(改名了)
+    npm uninstall vue-cli -g
+    npm install -g @vue/cli 
 #5.初始化项目模板
-    vue init webpack {web-fe}
+    vue create {web-fe}
     参数指定
     =========================
-    ? Project name web-fe
-    ? Project description A Vue.js project
-    ? Author Von.F
-    ? Vue build standalone
-    ? Install vue-router? Yes
-    ? Use ESLint to lint your code? Yes
-    ? Pick an ESLint preset Standard
-    ? Set up unit tests Yes
-    ? Setup e2e tests with Nightwatch? No //这个需要安装谷歌浏览器插件，容易下载失败，不需要可以不安装这个e2e
-    ? Should we run `npm install` for you after the project has been created? (recommended) npm
+    ? Please select a preset //使用默认设置就好default(babel,eslint)
     ==========================
 #6.cnpm install 
     或者npm install --registry=https://registry.npm.taobao.org
     安装项目依赖
 #6.1 安装axios http tool lib 
     npm install axios --save
-#7.cnpm run dev
-    非cnpm install则直接npm run dev
+#7.cnpm run serve
+    非cnpm install则直接npm run serve
     启动服务开发模式
     访问端口验证是否成功
 
