@@ -3,8 +3,11 @@
 #2.安装npm(高版本node已附带npm)
 
 #3.指定淘宝镜像（防止vue-cli构建报错）
+    npm config set registry https://registry.npm.taobao.org //配置指向源
+    或者安装cnpm
     npm install -g cnpm --registry=https://registry.npm.taobao.org
 ------------------------------------------
+    https://www.cnblogs.com/lock360/p/5810402.html
     vue-cli构建项目报错处理
     https://blog.csdn.net/weixin_43207791/article/details/82714882
     npm介绍与cnpm介绍

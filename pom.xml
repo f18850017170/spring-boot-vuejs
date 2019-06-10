@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.vonfly</groupId>
-    <artifactId>spring-boot-vue</artifactId>
+    <artifactId>spring-boot-vuejs</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>web-backend-module</module>
