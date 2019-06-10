@@ -7,6 +7,8 @@ import store from './store'
 import Element from 'element-ui'
 import Cookies from 'js-cookie'
 import App from './App'
+import '@/icons' // icon 直接在自身的js中声明为Vue的components了
+import '@/permission' // permission control
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium'
 })
