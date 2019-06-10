@@ -13,17 +13,14 @@ import App from './App'
 import '@/icons' // icon 直接在自身的js中声明为Vue的components了
 import '@/permission' // permission control
 import { mockXHR } from '../mock'
-Vue.use(Element, {
-  size: Cookies.get('size') || 'medium'
-})
 
 if (process.env.NODE_ENV === 'production') {
   mockXHR()
 }
-// set Element lang to EN
-Vue.use(Element)
 Vue.config.productionTip = false
-
+Vue.use(Element, {
+  size: Cookies.get('size') || 'medium'
+})
 /* eslint-disable no-new */
 /* new Vue({
   el: '#app',
