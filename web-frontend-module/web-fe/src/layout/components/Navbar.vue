@@ -24,7 +24,7 @@
   </div>
 </template>
 <script>
-import {mapGetters} from 'vuex'
+import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 
@@ -40,10 +40,10 @@ export default {
     ])
   },
   methods: {
-    toggleSideBar: function () {
+    toggleSideBar: function() {
       this.$store.dispatch('app/toggleSideBar')
     },
-    async logout () {
+    async logout() {
       await this.$store.dispatch('user/logout')
       this.$router.push(`/login?redirect=${this.route.fullPath}`)
     }

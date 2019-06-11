@@ -3,10 +3,10 @@
     <div v-if="device === 'mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"></div>
     <sidebar class="sidebar-container"></sidebar>
     <div class="main-container">
-      <div :class="{'fixed-header':fixedHeadr}">
+      <div :class="{'fixed-header':fixedHeader}">
         <navbar></navbar>
       </div>
-      <app-mian></app-mian>
+      <app-main></app-main>
     </div>
   </div>
 </template>
@@ -26,10 +26,10 @@ export default {
     sidebar () {
       return this.$store.state.app.sidebar
     },
-    divice () {
-      return this.$store.state.app.device
+    device() {
+        return this.$store.state.app.device
     },
-    fixedHeader () {
+    fixedHeader() {
       return this.$store.state.settings.fixedHeader
     },
     classObj () {
