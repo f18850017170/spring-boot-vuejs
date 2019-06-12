@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;"/>
+    <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;" />
 
     <el-tree
       ref="tree2"
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       filterText: '',
       data2: [{
@@ -61,12 +61,12 @@ export default {
     }
   },
   watch: {
-    filterText (val) {
+    filterText(val) {
       this.$refs.tree2.filter(val)
     }
   },
   methods: {
-    filterNode (value, data) {
+    filterNode(value, data) {
       if (!value) return true
       return data.label.indexOf(value) !== -1
     }
